@@ -17,6 +17,7 @@ specifiers:
   react-dom: ^18.2.0
   tiny-invariant: ^1.3.1
   typescript: ^4.7.4
+  zod: ^3.19.1
 
 dependencies:
   '@prisma/client': 4.4.0_prisma@4.4.0
@@ -28,6 +29,7 @@ dependencies:
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   tiny-invariant: 1.3.1
+  zod: 3.19.1
 
 devDependencies:
   '@remix-run/dev': 1.7.2_63cxfdg5f5bb4xpkk3vcjfcl3q
@@ -7602,6 +7604,10 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  /zod/3.19.1:
+    resolution: {integrity: sha512-LYjZsEDhCdYET9ikFu6dVPGp2YH9DegXjdJToSzD9rO6fy4qiRYFoyEYwps88OseJlPyl2NOe2iJuhEhL7IpEA==}
+    dev: false
 
   /zwitch/2.0.2:
     resolution: {integrity: sha512-JZxotl7SxAJH0j7dN4pxsTV6ZLXoLdGME+PsjkL/DaBrVryK9kTGq06GfKrwcSOqypP+fdXGoCHE36b99fWVoA==}
