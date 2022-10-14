@@ -11,6 +11,7 @@ import {
   useLoaderData,
   useTransition,
 } from '@remix-run/react';
+import Company from '~/companies/components/Company';
 import type AwesomeRemoteJob from '~/types/AwesomeRemoteJob';
 
 export const loader: LoaderFunction = async () => {
@@ -56,6 +57,7 @@ export const action: ActionFunction = async ({ request, context, params }) => {
 
 export default function Index() {
   const data = useLoaderData<AwesomeRemoteJob[]>();
+  console.log({ data });
   const actionData = useActionData();
   const transition = useTransition();
 
@@ -63,7 +65,11 @@ export default function Index() {
     <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
       <ul>
         {data.map((m) => (
-          <li key={m.name}>{m.name}</li>
+          <Company
+            key={m.name}
+            category={m.categories.join(',')}
+            name={m.name}
+          />
         ))}
       </ul>
       <div>
